@@ -73,15 +73,61 @@ footer{background:#071321;color:#b8c6d5;padding:32px 0}.foot{display:flex;justif
 </div></section>
 <section class="contact" id="contact"><div class="wrap contactgrid">
  <div class="contactinfo"><div class="eyebrow">Get in touch</div><h2>Let’s talk about your project.</h2><p>Tell us what you need. We’ll follow up to discuss the scope, timing and next steps.</p><p><strong>Service area</strong><br>Los Angeles and surrounding Southern California communities</p><p><strong>Email</strong><br><a href="mailto:SALEHEHSANZILLU@GMAIL.COM">SALEHEHSANZILLU@GMAIL.COM</a></p><p><strong>Website</strong><br>semesystem.com</p></div>
- <form class="contactbox"
-       action="https://formsubmit.co/SALEHEHSANZILLU@GMAIL.COM"
+
+<form class="contactbox"
+      action="https://formsubmit.co/SALEHEHSANZILLU@GMAIL.COM"
       method="POST">
-  <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
-  <div class="field"><label for="service">What can we help with?</label><select id="service" name="service"><option>Electrical installation</option><option>Panel or power upgrade</option><option>Maintenance / troubleshooting</option><option>Lighting and controls</option><option>Facility project support</option><option>Other</option></select></div>
-  <div class="field"><label for="message">Project details</label><textarea id="message" name="message" placeholder="Briefly describe your project, location and timing."></textarea></div>
-  <button class="btn" type="submit">Send Project Inquiry</button>
-  <p class="formnote">().</p>
- </form>
+
+  <!-- Email settings -->
+  <input type="hidden" name="_subject"
+         value="New SEM Electrical Systems Project Inquiry">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Customer name -->
+  <div class="field">
+    <label for="name">Name</label>
+    <input id="name" name="name" required
+           placeholder="Your name">
+  </div>
+
+  <!-- Customer email -->
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email"
+           required placeholder="you@example.com">
+  </div>
+
+  <!-- Service selection -->
+  <div class="field">
+    <label for="service">What can we help with?</label>
+    <select id="service" name="service">
+      <option>Electrical installation</option>
+      <option>Panel or power upgrade</option>
+      <option>Maintenance / troubleshooting</option>
+      <option>Lighting and controls</option>
+      <option>Facility project support</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <!-- Project details -->
+  <div class="field">
+    <label for="message">Project details</label>
+    <textarea id="message" name="message"
+      placeholder="Briefly describe your project, location and timing."></textarea>
+  </div>
+
+  <button class="btn" type="submit">
+    Send Project Inquiry
+  </button>
+
+  <p class="formnote">
+    Thank you for contacting SEM Electrical Systems.
+  </p>
+
+</form>
+
 </div></section>
 </main>
 <footer><div class="wrap">
